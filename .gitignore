@@ -1,0 +1,22 @@
+# Python venvs and builds
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# IDE and editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Data and reports outputs
+reports/*.png
+reports/*.csv
+
+# Matplotlib cache workaround
+mpl_cache/
+
+data/
+reports/

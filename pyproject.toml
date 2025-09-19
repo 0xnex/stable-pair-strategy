@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "stable-pair-strategy"
+version = "0.1.0"
+description = "Stable pair strategy analytics"
+authors = ["0xnex <nextcrypto@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "stable_pair_strategy", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+numpy = "^2.3.3"
+pandas = "^2.3.2"
+matplotlib = "^3.10.6"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
