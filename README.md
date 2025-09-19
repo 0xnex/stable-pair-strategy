@@ -19,8 +19,9 @@ This project provides analytics utilities and a plotting workflow for evaluating
    Outputs are written under `reports/`:
    - `price_bounds.png` — price curve with dynamic bounds for each `K`.
    - `price_bounds_coverage.csv` — swap and minute coverage ratios.
-   - `price_bounds_reentry.csv` — minute-based outside streak summaries.
-   - `price_bounds_rebalance.csv` — rebalance counts for each `(K, counter)` pair.
+- `price_bounds_reentry.csv` — minute-based outside streak summaries.
+- `price_bounds_rebalance.csv` — rebalance counts for each `(K, counter)` pair.
+- `scripts/simulate_dynamic_range.py` — reproduces the PRD-style, 7-day lookback simulation with configurable `K`, monitoring window, and minute-based rebalance rules.
 
 ## Command Line Interface
 `scripts/plot_price_bounds.py` accepts the following options:
@@ -40,4 +41,3 @@ poetry run python scripts/plot_price_bounds.py \
 - `scripts/` — executable helpers, including the plotting CLI.
 - `data/` — sample swap datasets used for local testing.
 - `reports/` — generated plots and CSV summaries.
-
